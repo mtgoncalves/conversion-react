@@ -20,9 +20,12 @@ const ConversionForm = () => {
       answer: studentResponse,
     };
 
-    // Request output from backend
+    // Request conversion output from spring boot app
     axios
-      .post(`http://44.200.11.34/api/unit-conversion`, queryParams)
+      .post(
+        `http://${process.env.REACT_APP_SPRING_BOOT_ADDRESS}/api/unit-conversion`,
+        queryParams
+      )
       .then((response) => {
         setResult(response.data.message);
       })
