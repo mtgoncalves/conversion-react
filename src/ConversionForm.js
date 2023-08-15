@@ -39,7 +39,7 @@ const ConversionForm = () => {
       <form onSubmit={handleSubmit}>
         <Grid item style={{ textAlign: 'center' }}>
           <Typography sx={{ pt: 2 }} typography='h4'>
-            Check Conversion
+            Conversion Checker
           </Typography>
         </Grid>
         <TextField
